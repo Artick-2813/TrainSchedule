@@ -1,0 +1,36 @@
+body{
+	background-color: blueviolet;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.error_message{
+	text-align: center;
+	padding: 10px;
+	line-height: 1.2;
+	margin-top: 100px;
+}
+
+.error_message span{
+	font-size: 40px;
+	color: white;
+}
+
+.back_menu{
+	text-align: center;
+	padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.back_menu a{
+	font-size: 30px;
+	color: ghostwhite;
+	text-decoration: none;
+}
+
+.back_menu a:hover{
+	transition: .8s ease;
+	color: black;
+	font-size: 32px;
+}

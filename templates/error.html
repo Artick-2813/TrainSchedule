@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ошибка</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ErrorStyle.css') }}">
+</head>
+<body>
+	<div class="error_message">
+		<span>{{ info }}</span>
+	</div>
+	<div class="back_menu">
+ 		<a href="{{ url_for('index') }}">В главное меню</a>
+ 	</div>
+</body>
+
+</html>

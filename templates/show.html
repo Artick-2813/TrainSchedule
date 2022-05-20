@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/ShowStyle.css') }}">
+	
+</head>
+<body>
+
+ <main>
+ 	<div class="title_page">
+ 		<span>{{ title }}</span>
+ 	</div>
+ 	<div class="back_menu">
+ 		<a href="{{ url_for('index') }}">В главное меню</a>
+ 	</div>
+ {% for elem in info %}
+	<div class="block_info">
+		<div class="departure">
+			<span>Отправление:</span><span>{{ elem.Departure }}</span>
+		</div>
+		<div class="arrival">
+			<span>Прибытие:</span><span>{{ elem.Arrival }}</span>
+		</div>
+		<div class="path">
+			<span>{{ elem.Path }}</span>
+		</div>
+		<div class="price">
+			<span>{{ elem.Price }}</span>
+		</div>
+	</div>
+ {% endfor %}
+ </main>
+
+</body>
+</html>

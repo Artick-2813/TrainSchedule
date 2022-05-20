@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TrainSchedule</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/IndexStyle.css') }}">
+</head>
+<body>
+ 
+ <main class='content'>
+  <div class="wrapper">
+	   		
+	<form action="/send_data" method="post" class="send_data">
+		{{form.hidden_tag()}}
+		{{ form.departure(class='departure', placeholder="Откуда") }}
+		{{ form.arrival(class='arrival', placeholder="Куда") }}
+		<input type="submit" value="Показать распсиание" class='btn_show'>
+	 </form>
+			
+  </div>
+  
+ </main>
+ 
+ <div id="loading">
+  	<span>Подождите пожалуйста, идет загрузка данных</span>
+ </div>
+
+</body>
+<script src="{{ url_for('static', filename='js/jquery-3.6.0.min.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static', filename='js/javascript.js') }}" type="text/javascript"></script>
+
+</html>

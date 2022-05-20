@@ -1,0 +1,86 @@
+body{
+	background-color: blueviolet;
+	
+}
+
+.title_page{
+	text-align: center;
+	padding: 10px;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.title_page span{
+	font-size: 45px;
+	color: ghostwhite;
+}
+
+.back_menu{
+	text-align: center;
+	padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.back_menu a{
+	font-size: 30px;
+	color: ghostwhite;
+	text-decoration: none;
+}
+
+.block_info{
+	display: grid;
+	grid-template-columns:  20px 1fr 1.5fr 1fr 1fr 20px;
+	grid-template-rows: 1fr;
+	grid-gap: 10px;
+	text-align: center;
+	height: 100px;
+	margin: 50px auto;
+	border-radius: 15px;
+	background-color: ghostwhite;
+	align-items: center;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+.departure{
+	grid-column: 2/2;
+}
+span{
+	font-size: 30px;
+	padding-left: 10px;
+}
+
+.arrival{
+	grid-column: 4/4;
+}
+
+.path{
+	grid-column: 3/3;
+	grid-row: 1/1;
+}
+.price{
+	grid-column: 5/5;
+	grid-row: 1/1;
+}
+
+.block_info:hover{
+	background-color: black;
+	color: white;
+	transition: .8s ease;
+}
+
+.back_menu a:hover{
+	transition: .8s ease;
+	color: black;
+	font-size: 32px;
+}
+
+@media(max-width:1400px){
+	.title_page span{
+		font-size: 35px;
+	}
+	span{
+		font-size: 20px;
+	}
+	
+}
