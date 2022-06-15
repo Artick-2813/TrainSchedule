@@ -33,14 +33,13 @@ def get_site_with_browser(url, station_1='', station_2=''):
         browser.get(url)
 
         time.sleep(3)
-        input_departure = browser.find_element_by_xpath('//*[@id="searchDepartureStationName"]').send_keys(station_1)
+        input_departure = browser.find_element_by_xpath('/html/body/div[1]/div[2]/div/div/div/div[1]/form/div/div[1]/div[1]/div[1]/span/label/input').send_keys(station_1)
 
         time.sleep(3)
-        input_arrive = browser.find_element_by_xpath('//*[@id="searchArrivalStationName"]').send_keys(station_2)
+        input_arrive = browser.find_element_by_xpath('/html/body/div[1]/div[2]/div/div/div/div[1]/form/div/div[2]/div/div[1]/span/label/input').send_keys(station_2)
 
-        time.sleep(5)
-        button = browser.find_element_by_xpath(
-            '/html/body/div[5]/div[2]/noindex/form/div/table/tbody/tr/td[7]/div/button/span[1]').click()
+        time.sleep(3)
+        button = browser.find_element_by_class_name('src__button__3U_K9').click()
 
         time.sleep(5)
 
@@ -50,6 +49,8 @@ def get_site_with_browser(url, station_1='', station_2=''):
 
     except Exception as ex:
         print(ex)
+        error = connection_terminated()
+        return error
 
     finally:
         browser.close()
