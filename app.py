@@ -35,7 +35,7 @@ class TrainSchedule(QMainWindow):
         self.setWindowIcon(QtGui.QIcon('icons/icon.png'))
         self.resize(1200, 800)
         self.setMinimumWidth(1200)
-        self.setMinimumHeight(800)
+        self.setMinimumHeight(900)
 
 
 def app_run(application):
