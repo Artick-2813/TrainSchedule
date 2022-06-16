@@ -1,5 +1,5 @@
 body{
-	background-color: blueviolet;
+	background-color: var(--blueviolet);
 	margin-right: 20px;
 	margin-left: 20px;
 }
@@ -31,6 +31,6 @@ body{
 
 .back_menu a:hover{
 	transition: .8s ease;
-	color: black;
+	color: red;
 	font-size: 32px;
 }
